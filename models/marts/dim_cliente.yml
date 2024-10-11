@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: dim_cliente
+    columns:
+      - name: sk_cliente
+        description: "Chave surrogate da tabela cliente"
+        tests:
+          - unique
+          - not_null
+
+      - name: pk_cliente
+        description: "Chave primária da tabela cliente"
+        tests:          
+          - unique
+          - not_null
+             
+      - name: nome_completo
+        description: "O nome do cliente"
+
+      - name: tipo_pessoa
+        description: "O tipo de pessoa (loja, pessoa física ou contato da loja)"
+        
+      - name: nome_loja
+        description: "O nome da loja, se o tipo de pessoa estiver na loja"

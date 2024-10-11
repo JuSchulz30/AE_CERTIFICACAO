@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: dim_data
+    description: "Dimensão de data usada para analisar dados temporais"
+    columns:
+      - name: date
+        description: "A data completa no formato AAAA-MM-DD"
+        tests:
+          - unique
+          - not_null
+
+      - name: ano
+        description: "O ano correspondente a data"
+        tests:
+          - not_null
+
+      - name: mes
+        description: "O número do mês (1-12) que corresponde a data"
+        tests:
+          - not_null
+
+      - name: dia
+        description: "O número do dia (1-31) que corresponde a data"
+        tests:
+          - not_null
+
+      - name: nome_mes
+        description: "O nome completo do mês (por exemplo, Janeiro, Fevereiro)"
+        tests:
+          - not_null
+
+      - name: dia_da_semana
+        description: "O nome completo do dia da semana (por exemplo, sunday, monday.)"
+        tests:
+          - not_null
+
+      - name: trimestre
+        description: "O trimestre do ano (1-4) correspondente à data"
+        tests:
+          - not_null

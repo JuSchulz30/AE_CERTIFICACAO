@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_cartao_credito
+    columns:
+      - name: sk_cartao_credito
+        description: Chave substituta do id do cartao de credito.
+        tests:
+          - unique
+          - not_null   
+
+      - name: id_cartao_credito
+        description: "Id do cartão de crédito"
+
+      - name: tipo_cartao
+        description: "O tipo do cartão de crédito"

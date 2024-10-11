@@ -15,7 +15,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  bdt_adventureworks: 
+  ae_certificacao: 
     marts:
       +materialized: table
     staging:
@@ -24,6 +24,6 @@ models:
       +materialized: view
 
 seeds:
-  bdt_adventureworks: 
-    sap_adventure_works:
+  ae_certificacao: 
+    fea24_6:
       +schema: raw_adventure_works
