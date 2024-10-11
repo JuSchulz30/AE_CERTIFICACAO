@@ -1,0 +1,205 @@
+version: 2
+
+# Boa prática realizar os testes nessa fase (stagings) para que seja observado qualquer divergência
+# nesses testes de forma precoce, impedindo assim que o projeto se torne oneroso, ao realizar
+# os mesmos testes, porém na marts.
+
+sources:
+  - name: erp
+    description: 'Essa é uma réplica da base de dados da Adventure Works, do Snowflake.'
+    database: fea24_6
+    schema: raw_adventure_works
+    tables:
+      - name: address
+        description: 'Dados da tabela Address.'
+        columns:
+          - name: pk_endereço
+            description: 'chave primária da tabela address.'
+            tests:
+              - unique
+              - not_null
+          - name: fk_estado
+            description: 'chave estrangeira da tabela address.'
+            tests:
+              - not_null
+      - name: countryregion
+        description: 'Dados da tabela Country Region.'
+        columns:
+          - name: pk_pais
+            description: 'chave primária da tabela country region.'
+            tests:
+              - unique
+              - not_null
+      - name: creditcard
+        description: 'Dados da tabela Creditcard.'
+        columns:
+          - name: pk_cartao_credito
+            description: 'chave primària da tabela creditcard.'
+            tests:
+              - unique
+              - not_null
+      - name: customer
+        description: 'Dados da tabela Customer.'
+        columns:
+          - name: pk_cliente
+            description: 'chave primária da tabela customer.'
+            tests:
+              - unique
+              - not_null
+          - name: fk_loja
+            description: 'chave estrangeira da tabela customer.'
+            tests:
+              - not_null
+          - name: fk_territorio
+            description: 'chave estrangeira da tabela customer.'
+            tests:
+              - not_null
+          - name: fk_pessoa
+            description: 'chave estrangeira da tabela customer.'
+            tests:
+              - not_null
+      - name: employee
+        description: 'Dados da tabela employee.'
+        columns:
+          - name: id_funcionario
+            description: 'Chave primária da tabela employee.'
+            tests:
+              - unique
+              - not_null
+          - name: cargo
+            description: 'Cargo dos funcionarios na tabela employee.'
+          - name: genero
+            description: 'Gênero dos funcionarios na tabela employee.'
+          - name: data_contratacao
+            description: 'Data da contratação de cada funcionario na tabela employee.'      
+      - name: person
+        description: 'Dados da tabela person.'
+        columns:
+          - name: id_entid_comercial_pessoa
+            description: 'chave primária da tabela person.'
+            tests:
+              - unique
+              - not_null
+      - name: product
+        description: 'Dados da tabela product.'
+        columns:
+          - name: pk_produto
+            description: 'chave primária da tabela product.'
+            tests:
+              - unique
+              - not_null
+      - name: productcategory
+        description: 'Dados da tabela productcategory.'
+        columns:
+          - name: id_categoria_produto
+            description: 'Chave primária da tabela productcategory.'
+            tests:
+              - unique
+              - not_null
+          - name: nome_categoria
+            description: 'Nome da categoria dos produtos da tabela productcategory.'
+      - name: productsubcategory
+        description: 'Dados da tabela productsubcategory.'
+        columns:
+          - name: id_subcategoria_produto
+            description: 'Chave primária da tabela productsubcategory.'
+            tests:
+              - unique
+              - not_null
+          - name: id_categoria_produto
+            description: 'Chave estrangeira da tabela productsubcategory.'
+            tests:
+              - not_null
+          - name: nome_categoria
+            description: 'Nome da categoria dos produtos da tabela productsubcategory.'      
+      - name: salesorderdetail
+        description: 'Dados da tabela salesorderdetail.'
+        columns:
+          - name: pk_pedido_detalhado
+            description: 'chave primária da tabela salesorderdetail.'
+            tests:
+              - unique
+              - not_null
+          - name: fk_pedido
+            description: 'Chave estrangeira da tabela salesorderdetail.'
+            tests:
+              - not_null
+          - name: fk_produto
+            description: 'Chave estrangeira da tabela salesorderdetail.'
+            tests:
+              - not_null
+      - name: salesorderheader
+        description: 'Dados da tabela salesorderheader.'
+        columns:
+          - name: pk_pedido
+            description: 'Chave primária da tabela salesorderheader.'
+            tests:
+              - unique
+              - not_null
+          - name: fk_cartao_credito
+            description: 'Chave Estrangeira da tabela salesorderheader.'
+            tests:
+              - not_null
+      - name: salesorderheadersalesreason
+        description: 'Dados da tabela salesorderheadersalesreason.'
+        columns:
+          - name: fk_pedido
+            description: 'Chave estrangeira da tabela salesorderheadersalesreason.'
+            tests:
+              - not_null
+          - name: fk_motivo_venda
+            description: 'Chave estrangeira da tabela salesorderheadersalesreason.'
+            tests:
+              - not_null
+      - name: salesperson
+        description: 'Dados da tabela salesperson.'
+        columns:
+          - name: id_vendedor
+            description: 'Chave estrangeira da tabela salesperson.'
+            tests:
+              - unique                  
+              - not_null              
+      - name: salesreason
+        description: 'Dados da tabela salesreason.'
+        columns:
+          - name: pk_motivo_venda
+            description: 'Chave primaria da tabela salesorderheader.'
+            tests:
+              - unique
+              - not_null
+      - name: salesterritory
+        description: 'Dados da tabela salesterritory.'
+        columns:
+          - name: pk_territorio
+            description: 'Chave primária da tabela salesterritory.'
+            tests:
+              - unique
+              - not_null
+      - name: stateprovince   
+        description: 'Dados da tabela stateprovince.'
+        columns:
+          - name: pk_estado 
+            description: 'Chave primária da tabela stateprovince.'
+            tests:
+              - unique
+              - not_null
+          - name: fk_pais
+            description: 'Chave estrangeira da tabela stateprovince.'
+            tests:
+              - not_null 
+          - name: fk_territorio
+            description: 'Chave estrangeira da tabela stateprovince.'
+            tests:
+              - not_null       
+      - name: store
+        description: 'Dados da tabela store.'
+        columns:
+          - name: pk_loja
+            description: 'Chave primária da tabela store.'
+            tests:
+              - unique
+              - not_null
+          - name: fk_vendedor
+            description: 'Chave estrangeira da tabela store.'
+            tests:
+              - not_null
