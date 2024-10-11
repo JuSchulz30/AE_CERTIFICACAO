@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: dim_vendedor
+    columns:
+      - name: sk_vendedor
+        description: "Chave surrogada de vendedor da tabela dim_vendedor."
+        tests:
+          - unique              
+          - not_null
+      
+      - name: id_vendedor
+        description: "Id do vendedor da tabela vendedor."
+          
+      - name: cargo
+        description: "Cargo de cada vendedor da tabela dim_vendedor."
+
+      - name: genero
+        description: "Gênero de cada vendedor."
+
+      - name: cota_vendas
+        description: "A cota de vendas de cada vendedor."
+
+      - name: vendas_acumuladas
+        description: "Valor das vendas acumuladas."
+      
+      - name: vendas_ano_passado
+        description: "Valor das vendas ocorridas no ano passado."

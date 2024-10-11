@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_localizacao
+    columns:
+      - name: sk_endereco_envio
+        description: "Chave surrogada da tabela localização."
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_endereco_envio
+        description: "Chave estrangeira da tabela localização."
+        tests:          
+          - not_null
+             
+      - name: nome_cidade
+        description: "O nome da cidade."
+
+      - name: estado
+        description: "O nome do estado."
+        
+      - name: pais
+        description: "O nome do país."

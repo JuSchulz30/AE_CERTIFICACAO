@@ -1,0 +1,81 @@
+version: 2
+models:
+  - name: fct_vendas
+    description: >
+      Tabela de fatos que registra transações de vendas, combinando informações
+      de várias dimensões, como produtos, clientes, cartões de crédito, locais, motivos e datas.
+    columns:
+      - name: sk_fato_vendas
+        description: Chave primária da tabela fato vendas.
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_vendas
+        description: "Chave estrangeira referenciando a tabela motivo_venda."
+
+      - name: fk_pedido_detalhado
+        description: "Chave estrangeira referenciando o pedido detalhado."
+
+      - name: fk_produto
+        description: "Chave estrangeira referenciando o produto."
+
+      - name: fk_cliente
+        description: "Chave estrangeira referenciando o cliente."
+
+      - name: fk_pedido
+        description: "Chave estrangeira referenciando o pedido."
+
+      - name: fk_vendedor
+        description: "Chave estrangeira referenciando o vendedor."
+
+      - name: fk_territorio
+        description: "Chave estrangeira referenciando o território."
+
+      - name: fk_endereco_envio
+        description: "Chave estrangeira referenciando o endereço de envio."
+
+      - name: fk_cartao_credito
+        description: "Chave estrangeira referenciando o cartão de crédito utilizado."      
+
+      - name: motivo_venda_agregada
+        description: "Traz o motivo da venda."
+
+      - name: data_pedido
+        description: "Data que foi realizado o pedido."
+
+      - name: data_envio
+        description: "Data de envio do pedido."
+
+      - name: numero_pedido
+        description: "Número do pedido."
+
+      - name: qtd_pedido
+        description: "Quantidade de itens no pedido."
+
+      - name: preco_unitario
+        description: "Preço unitário do produto."
+
+      - name: desconto_preco_unitario
+        description: "Desconto aplicado ao preço unitário."
+
+      - name: total_liquido
+        description: "Total líquido após descontos."
+
+      - name: frete_rateado
+        description: "Custo do frete rateado por pedido."
+
+      - name: imposto_rateado
+        description: "Imposto rateado por pedido."
+
+      - name: total_bruto
+        description: "Total bruto do pedido incluindo descontos, frete e imposto."
+
+      - name: cliente
+        description: "Nome do cliente."
+
+      - name: loja
+        description: "Nome da loja."
+
+      - name: tipo_pessoa
+        description: "O tipo de pessoa (loja, pessoa física ou contato da loja)."
