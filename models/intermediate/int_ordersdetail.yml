@@ -1,0 +1,68 @@
+version: 2
+
+models:
+  - name: int_ordersdetail
+    description: "Tabela que armazena informações detalhadas sobre as vendas."
+    columns:
+      - name: sk_vendas
+        description: "Surrogate key para a tabela de vendas."
+        tests:
+          - unique
+          - not_null
+
+      - name: pk_pedido_detalhado
+        description: "Chave estrangeira referenciando o pedido detalhado."
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_produto
+        description: "Chave estrangeira referenciando o produto."
+
+      - name: fk_cliente
+        description: "Chave estrangeira referenciando o cliente."
+
+      - name: fk_pedido
+        description: "Chave estrangeira referenciando o pedido."
+
+      - name: fk_vendedor
+        description: "Chave estrangeira referenciando o vendedor."
+
+      - name: fk_territorio
+        description: "Chave estrangeira referenciando o território."
+
+      - name: fk_endereco_envio
+        description: "Chave estrangeira referenciando o endereço de envio."
+
+      - name: fk_cartao_credito
+        description: "Chave estrangeira referenciando o cartão de crédito utilizado."
+
+      - name: data_pedido
+        description: "Data do pedido."
+
+      - name: data_envio
+        description: "Data de envio do pedido."
+
+      - name: numero_pedido
+        description: "Número do pedido."
+
+      - name: qtd_pedido
+        description: "Quantidade de itens no pedido."
+
+      - name: preco_unitario
+        description: "Preço unitário do produto."
+
+      - name: desconto_preco_unitario
+        description: "Desconto aplicado ao preço unitário."
+
+      - name: total_liquido
+        description: "Total líquido após descontos."
+
+      - name: frete_rateado
+        description: "Custo do frete rateado por pedido."
+
+      - name: imposto_rateado
+        description: "Imposto rateado por pedido."
+
+      - name: total_bruto
+        description: "Total bruto do pedido incluindo descontos, frete e imposto."
