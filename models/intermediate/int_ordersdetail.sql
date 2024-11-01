@@ -62,7 +62,7 @@ with
             , cast(frete / count(*) over(partition by fk_pedido) as numeric(18,2)) as frete_rateado
             -- rateado o imposto pela quantidade de ítens no mesmo pedido.
             , cast(imposto / count(*) over(partition by fk_pedido) as numeric(18,2)) as imposto_rateado
-            , preco_unitario * qtd_pedido * (1 - desconto_preco_unitario) + imposto_rateado + frete_rateado as total_bruto
+            , preco_unitario * qtd_pedido as total_bruto
         from joined
     )
     -- Criado uma chave surrogate, com o fk_pedido e fk_produto.
