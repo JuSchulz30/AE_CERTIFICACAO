@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: agg_vendas_por_regiao
+    description: "Tabela agregada, que armazena informações sobre as 
+      vendas por país e território com o total de quantidade de pedidos e o total de vendas."
+    columns:
+      - name: pais
+        description: "País onde o território está localizado."
+      
+      - name: nome_territorio
+        description: "Nome da região correspondente ao território."
+
+      - name: total_pedidos_cidade
+        description: "Número total de pedidos por cidade."
+
+      - name: total_vendas_cidade
+        description: "QValor total de vendas na cidade."
