@@ -13,7 +13,7 @@ sources:
       - name: address
         description: 'Dados da tabela Address.'
         columns:
-          - name: pk_endereço
+          - name: pk_endereco
             description: 'chave primária da tabela address.'
             tests:
               - unique
