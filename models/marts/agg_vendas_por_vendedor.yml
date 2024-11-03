@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: agg_vendas_por_vendedor
+    description: "Tabela agregada, que armazena informações sobre >
+     as vendas por vendedor, com valores por ano, por cota, total de > 
+     pedidos e demais informações descritas abaixo."
+     
+    columns:
+      - name: id_vendedor
+        description: "Identificação do vendedor"
+
+      - name: id_territorio
+        description: "Identificação do territorio."
+
+      - name: cota_vendas
+        description: "Traz o valor da cota vendida."
+
+      - name: vendas_ano_atual
+        description: "Traz o valor de vendas no ano atual."
+
+      - name: total_quantidade_vendida
+        description: "Traz o valor da quantidade vendida."
+
+      - name: total_vendas
+        description: "Traz o total de vendas."
+
+      - name: total_desconto
+        description: "Traz o valor do total, com desconto."
+
+      - name: total_pedidos
+        description: "Traz o valor total de pedidos."
+
+      - name: total_clientes
+        description: "Traz o número de clientes do vendedor."
+
+      - name: valor_medio_pedido
+        description: "Traz o valor médio de pedidos do vendedor."
+
+      - name: status_cota
+        description: "Traz a informação se o vendedor alcançou ou não a cota de vendas."
