@@ -14,10 +14,10 @@ e oportunidades de crescimento. Com insights sobre ticket médio, produtos mais 
 podem tomar decisões estratégicas embasadas, priorizando ações de promoção, ajustes de estoque e até campanhas direcionadas para fidelização de clientes de alto valor.
 ## Setores beneficiados:
 
-Vendas e Marketing: para otimizar estratégias de promoção, campanhas e direcionamento de vendas com base nas preferências dos clientes e comportamento de compra por região.
-Financeiro: para monitorar o volume negociado e identificar oportunidades para maximizar receita e melhorar margens de lucro.
-Logística e Supply Chain: para alinhar estoque e planejamento de distribuição com a demanda por produtos específicos e picos de vendas regionais.
-Atendimento ao Cliente: para entender melhor o perfil dos clientes e suas necessidades, oferecendo um suporte mais personalizado e eficaz."
+**Vendas e Marketing:** para otimizar estratégias de promoção, campanhas e direcionamento de vendas com base nas preferências dos clientes e comportamento de compra por região.  
+**Financeiro:** para monitorar o volume negociado e identificar oportunidades para maximizar receita e melhorar margens de lucro.  
+**Logística e Supply Chain:** para alinhar estoque e planejamento de distribuição com a demanda por produtos específicos e picos de vendas regionais.  
+**Atendimento ao Cliente:** para entender melhor o perfil dos clientes e suas necessidades, oferecendo um suporte mais personalizado e eficaz."  
 Essa estrutura melhora a colaboração entre departamentos, garantindo que todos trabalhem em sinergia para atingir os objetivos da empresa com base em dados precisos e atualizados.
 
 Explore o arquivo para visualizar o painel e os insights disponíveis. [AQUI](https://drive.google.com/file/d/1h4KNtg0riLYFpRFYOxKVo5Yz2YmusLtC/view?usp=drive_link)
