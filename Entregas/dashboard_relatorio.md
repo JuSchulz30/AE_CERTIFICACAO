@@ -20,4 +20,4 @@ podem tomar decisões estratégicas embasadas, priorizando ações de promoção
 **Atendimento ao Cliente:** para entender melhor o perfil dos clientes e suas necessidades, oferecendo um suporte mais personalizado e eficaz."  
 Essa estrutura melhora a colaboração entre departamentos, garantindo que todos trabalhem em sinergia para atingir os objetivos da empresa com base em dados precisos e atualizados.
 
-Explore o arquivo para visualizar o painel e os insights disponíveis. [AQUI](https://drive.google.com/file/d/1h4KNtg0riLYFpRFYOxKVo5Yz2YmusLtC/view?usp=drive_link)
+Explore o arquivo para visualizar o painel e os insights disponíveis. [AQUI](https://app.powerbi.com/view?r=eyJrIjoiYmZkNGNmOTItYjgxNC00MmRhLWE5NDQtMDU1NTE0Yjc2NDA1IiwidCI6ImZhMjYwNjcyLTM1ZWMtNGI2Zi1hN2JhLWE3ZjJmMjI2N2U1ZiJ9)
