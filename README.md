@@ -40,7 +40,7 @@ Manter uma rotina de monitoramento do impacto das estratégias de vendas e promo
 
 Na pasta ENTREGAS, encontra-se os seguintes links:
 
-1- *Modelo Conceitual* que apresenta as tabelas fato e dimensões, criadas para, através delas, responder as perguntas de negócio, com as respectivas tabelas fonte que foram utilizadas para criar cada tabela fato e dimensão.
+1- *Modelo Conceitual* que apresenta as tabelas fato e dimensões, criadas para, através delas, responder as perguntas de negócio, com as respectivas tabelas fonte que foram utilizadas para criar cada tabela fato e dimensão.  
 2- *Dashboard*, produto de dados desenvolvido para a Adventure Works, com as métricas e principais KPIs, que respondem as perguntas de negócio levantadas pelo cliente, como “o número de pedidos, quantidade comprada, valor total negociado por produto, tipo de cartão, motivo de venda, data de venda, cliente, status, cidade, estado e país; os produtos com maior ticket médio por mês; os 10 melhores clientes por valor total; as 5 melhores cidades em valor total negociado”, entre outras perguntas.  
 3- *Vídeo explicativo* que apresenta todas as etapas do projeto.
 
